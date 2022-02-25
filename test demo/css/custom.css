@@ -1,0 +1,173 @@
+/* Custom */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(89, 89, 89);
+    color: rgb(206, 206, 206);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Content */
+  
+  .welcome {
+    /* Blocco di benvenuto */
+    padding: 15px;
+    text-align: center;
+    font-size: 1vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+  
+  }
+  
+  .carosello {
+    /* Blocco dello slider */
+    width: 50vw;
+    padding: 10px;
+    text-align: center;
+    font-size: 1vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+  }
+  
+  .welcome p,
+  .feedback p {
+    padding: 10px;
+  }
+  
+  .button {
+    /* Stili dei bottoni di invio risposta */
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(50, 148, 205);
+    width: 20vh;
+    margin: 20px auto 0px auto;
+  }
+  
+  .start {
+    /* Stile del bottone Inizia */
+    padding: 10px;
+    text-align: center;
+    font-size: 3vmin;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(50, 148, 205);
+  }
+  
+  .timer-running {
+    /* Stile del timer mentre il countdown è attivo */
+    padding: 40px;
+    background-color: rgb(24, 102, 0);
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 3vmin;
+    margin: auto auto 50px auto;
+  }
+  
+  .timer-finished {
+    /* Stile del timer quando il countdown ha raggiunto lo zero */
+    padding: 40px;
+    background-color: rgb(255, 2, 2);
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 3vmin;
+    margin: auto auto 50px auto;
+  }
+  
+  .welcome,
+  .wrapper-domande,
+  .positivo,
+  .negativo,
+  .fallito,
+  .singola-domanda {
+    display: none;
+  }
+  
+  .singola-domanda p {
+    /* Stile testo delle domande */
+    margin-bottom: 2vw;
+    font-weight: bold;
+  }
+  
+  .risposte label {
+    /* Stile delle risposte non selezionate */
+    text-align: center;
+    background-color: rgb(50, 148, 205);
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .visual {
+    /* Nascondiamo le radio e le checkbox per stilizzare */
+    display: none;
+  }
+  
+  .visual:checked ~ label {
+    /* Stille delle risposte selezionate */
+    text-align: center;
+    background-color: rgb(50, 148, 205);
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px white inset;
+    -moz-box-shadow: 0px 0px 10px 10px white inset;
+    -webkit-box-shadow: 0px 0px 10px 10px white inset;
+  }
+  
+  .feedback {
+    /* Stile dei blocchi di feedback */
+    padding: 15px;
+    text-align: center;
+    font-size: 1vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+  }
+  
+  .positivo span,
+  .negativo span,
+  .fallito span {
+    /* Stile congratulazioni/ritenta/fallito */
+    font-weight: bold;
+  }

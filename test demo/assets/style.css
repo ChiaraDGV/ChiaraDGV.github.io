@@ -1,0 +1,100 @@
+.cg-carousel {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .cg-carousel__container {
+    position: relative;
+    left: 0;
+  }
+  
+  .cg-carousel__track {
+    position: relative;
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-auto-flow: column;
+  }
+  
+  .cg-carousel__slide {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* padding: 5rem; */
+    color: #FFFFFF;
+  }
+  
+  .cg-carousel__slide-rounded {
+    border-radius: 0.5rem;
+  }
+  
+  .cg-carousel__btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+  
+  .cg-carousel__btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5rem;
+  }
+  
+  .arrow {
+    border: solid rgb(50, 148, 205);
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .next {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .prev {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  @-webkit-keyframes slideIn {
+    100% {
+      left: 0;
+    }
+  }
+  
+  @keyframes slideIn {
+    100% {
+      left: 0;
+    }
+  }
+  
+  @-webkit-keyframes slideOutLeft {
+    100% {
+      left: -100%;
+    }
+  }
+  
+  @keyframes slideOutLeft {
+    100% {
+      left: -100%;
+    }
+  }
+  
+  @-webkit-keyframes slideOutRight {
+    100% {
+      left: 100%;
+    }
+  }
+  
+  @keyframes slideOutRight {
+    100% {
+      left: 100%;
+    }
+  }
